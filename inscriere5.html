@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<title>Inscriere</title>
+		<link href='forms.css' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<main>
+			<form name="f2" action = "connect.php", method = "POST">
+				<fieldset>
+					<legend>Inregistreaza-te</legend>
+					<label>Nume:</label><br>
+					<input type = "text" name = "nume"><br><br>
+					<label>Prenume:</label><br>
+					<input type = "text" name = "prenume"><br><br>
+					
+					<label>Email:</label><br>
+					<input type="text" name="email"/>  
+                    <span id="email" style="color:red"></span><br><br>
+					
+					<label>Parola:</label><br>
+					<input type = "password" name = "password" maxlength="20"><br><br>
+					<span id="password" style="color:red"></span><br><br>
+					
+					<label>Nr.telefon:</label><br>
+					<input type="text" name="phone"/>  
+                    <span id="phone" style="color:red"></span><br><br>
+					
+					<label>Gen:</label><br>
+					<input type = "radio" name = "gen" value = "1">feminin
+					<input type = "radio" name = "gen" value = "2">masculin<br><br>
+					<label for="birthday">Birthday:</label><br>
+					<input type="date" id="date" name="date"><br><br>
+					<label>Tip user: </label><br>
+						<select name = "type">
+							<option value = "-1">alege tip user</option>
+							<option value = "Jurat">Jurat</option>
+							<option value = "Echipa">Echipa</option>
+						</select><br><br>
+					
+
+				</fieldset>
+				<div class="row">
+					<li><input type="submit" name="submit" value="Submit" /></li>
+				</div>
+			</form>
+			
+		</main>
+		
+		<div class = "footer">
+		Website by Rosca Maria
+		</div>
+		<script src="validare2.js"></script>
+	</body>
+</html>

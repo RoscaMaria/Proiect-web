@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang = "ro">
+	<head>
+		<title>Inscrie echipa</title>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<link href='styleImg.css' rel='stylesheet' type='text/css'>
+		<link href='tabel.css' rel='stylesheet' type='text/css'>
+		<link href='forms.css' rel='stylesheet' type='text/css'>
+		<script src="judete.js"></script>
+		<script src="exemplu.js"></script>
+	</head>
+	<body>
+		<header class="cd-header">
+			
+				<div class="flip-container">
+					<div class="flip-this">
+						<img width="100" alt="logo" src = "logo.png">
+					</div>
+				</div>
+				<nav>
+					<ul id = "menu">
+					  <li><a href="home5.php">Home</a></li>
+					  <li class = "copil"><a href="inscrieEchipa5.html">Înscriere echipă</a>
+						<ul>
+							<li><a href="reguli5.html">Regulament</a></li>
+						</ul>
+					  </li>
+					 
+					</ul>  
+				</nav>
+			
+		</header>
+		<main>
+			
+				<form action = "connect2.php", method = "POST" nume="f1">
+					<fieldset>
+						<legend>Inregistreaza-ti echipa!</legend>
+						<div class="row">
+							<div class="col-25">
+								<label>Nume echipa:</label>
+							</div>
+							<div class="col-75">
+								
+								<input type="text" placeholder="Numele echipei" name="nume"/>  
+								<span id="name" style="color:red"></span>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label>Email:</label>
+							</div>
+							<div class="col-75">
+								<input type = "text" name = "email" placeholder="persoana de contact"><br><br>
+							</div>
+						</div>
+						<div class = "row">
+							<div class="col-25">
+								<label for = "categorie">Categorie:</label>
+							</div>
+							<div class="col-75">
+								<select id = "categorie" name = "categorie">
+									<option value = "Adulti">Adulti</option>
+									<option value = "Juniori" selected>Juniori</option>
+								</select><br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="locatie">Locatie concurs:</label>  
+							</div>
+							<div class="col-75">
+								<input type="text" id="locatie" name="locatie" value="Cluj-Napoca" readonly><br><br>
+							</div>
+						</div>
+						<div class = "row">
+							<div class="col-25">
+								<br/>Judet:
+							</div>
+							<div class="col-75">
+								<select id="country" name="country"></select>
+							</div>
+						</div>
+						<div class = "row">
+							<div class="col-25">
+								<br />Localitate:
+							</div>
+							<div class="col-75">
+								<select name="state" id="state"></select>
+							</div>
+							<br/>
+							<script language="javascript">
+								localitate("country", "state");
+								localitate("country2");
+							</script>
+						</div>
+						<label>Stiluri de dans:</label>
+						<select id = "cstil" name = "stilDans">
+							<option value="Vals">Vals</option>
+							<option value="Jive">Jive</option>
+							<option value="Jazz">Jazz</option>
+							<option value="Latino">Latino</option>
+							<option value="Chacha">Chacha</option>
+							<option value="Contemporan">Contemporan</option>
+							<option value="Street dance">Street dance</option>
+							<option value="Improvizatie">Improvizatie</option>
+						</select><br><br>
+							
+						
+						
+						<label>Numar persoane intr-o echipa:</label>
+						<input type="radio" name="quantity" value = "1"> Solo
+						<input type="radio" name="quantity" value = "2">Duo
+						<input type="radio" name="quantity" value = "2>">Grup<br><br>
+						
+						<div class = "row">
+							<div class = "col-25">
+								<label for="sugestii">Sugestii:</label><br>
+							</div>
+							<div class = "col-75">
+								<textarea id="sugestii" name="sugestii" rows="4" cols="50" >Daca ai vreo sugestie pentru noi nu ezita sa ne anunti!
+								</textarea><br><br>
+							</div>
+						</div>
+						<input type="radio" name="reguli" value="Reguli" checked>
+						<label> Am citit si sunt de acord cu regulile</label><br><br>
+						<div class="row">
+							<li><input type="submit" name="submit" value="submit" /></li>
+						</div>
+						
+					</fieldset>
+				</form>
+			
+		</main>
+		
+		<div class = "footer">
+		Website by Rosca Maria
+		</div>
+	</body>
+</html>

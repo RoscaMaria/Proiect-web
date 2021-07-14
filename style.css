@@ -1,0 +1,84 @@
+
+#menu{
+	list-style:none;
+	background: linear-gradient(to top,rgb(72,209,204), rgba(140,175,255,0));
+}
+#menu a{
+	color:#fff;
+	padding:10px;
+	display:inline-block;
+}
+nav{width:30;float:left;}
+#menu ul{display:none;}
+#menu .copil:hover{
+	background:teal;
+	position:relative;
+
+}
+#disp{
+	background:turquoise;
+	list-style:none;
+}
+#menu .copil:hover ul{
+	display:block;
+	position:absolute;
+	left:100%;
+	top:0;
+	background:turquoise;
+}
+.cd-header {
+	position: relative;
+	height: 180px;
+}
+
+.flip-container {
+	
+	
+	background: transparent;
+	display: inline-block;
+	float:right;
+	padding:50px 40px;
+	width:100;
+	height:90px;
+	}
+
+.flip-this {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-this {
+  transition: all 0.9s;
+  transform: rotateY(180deg);
+  transform: scale(1.3) rotate(5deg);
+}
+
+.continut{
+	
+	margin-left: 160px; 
+	padding: 0px 10px;
+	text-align: justify;
+	margin-left: auto;
+    margin-right: auto;
+    width: 20em
+}
+body {
+  position: relative;
+  margin: 3;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background:powderblue;
+  margin-bottom:50px;
+}
+.footer {
+	position:fixed;
+	left: 0;
+	bottom:0;
+	width:100%;
+	background-color:teal;
+	color:white;
+	text-align:center;
+}
